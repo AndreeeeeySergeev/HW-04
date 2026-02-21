@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin: 0 auto;
+}
+button {
+    width: 20%;
+    height: 30px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+button:hover {
+    background: green;
+}
+
+#image-container {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.loader {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+.hidden {
+    display: none;
+}
